@@ -1,0 +1,15 @@
+vcenter_user                          = "username"               // vCenter User Name
+vcenter_password                      = "password"               // vCenter Password
+vcenter_server                        = "10.10.10.10"            // vCenter IP address
+vcenter_dc                            = "DC"                     // Data Center Name
+vcenter_rp                            = "RP"                     // Resource Pool Name
+esxi_ip                               = "10.10.10.11"            // ESXi Host IP address
+mgmt_nw                               = "mgmt"                   // Management Network
+guestinfo_hostname                    = "master-0"               // Hostname for Volterra VM
+guestinfo_interface_0_ip_0_address    = "10.10.10.100/24"        // IP address for Volterra VM
+guestinfo_interface_0_route_0_gateway = "10.10.10.1"             // Default Gateway for Volterra VM
+guestinfo_ves_clustername             = "volterra-cluster"       // Volterra Site Name
+guestinfo_ves_token                   = ""                       // Token provided by Volterra 
+guestinfo_ves_certifiedhardware       = "vmware-voltstack-combo" // Certified HW (ex. "vmware-voltstack-combo")
+guestinfo_ves_latitude                = ""                       // Latitude for the site
+guestinfo_ves_longitude               = ""                       // Longitute for the site
