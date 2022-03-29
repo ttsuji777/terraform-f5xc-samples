@@ -139,11 +139,12 @@ resource "volterra_http_loadbalancer" "this" {
     policy {
       js_download_path = "/common.js"
       protected_app_endpoints {
+        http_methods = [ "POST" ]
+        any_domain = true
         metadata {
           name    = var.bot_ep
           disable = false
         }
-        http_methods = [ "POST" ]
         path {
           prefix = var.bot_ep_prefix
         }
