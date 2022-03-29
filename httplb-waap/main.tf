@@ -140,7 +140,7 @@ resource "volterra_http_loadbalancer" "this" {
       js_download_path = "/common.js"
       protected_app_endpoints {
         http_methods = [ "POST" ]
-        any_domain = true
+        any_domain   = true
         metadata {
           name    = var.bot_ep
           disable = false
